@@ -1,0 +1,54 @@
+\documentclass[
+a4paper,
+12pt,
+twoside,
+openright
+]{book}
+
+\includeonly{Chapter1/chapter1}
+
+% ******************************** Preamble ************************************
+
+\input{Preamble/preamble}
+
+% *********************** Thesis Information & Metadata ************************
+
+\input{thesis-info}
+
+% ***************************** Front Matter ***********************************
+
+\begin{document}
+
+\frontmatter
+
+\maketitle
+
+% \include{Dedication/dedication}
+% \include{Abstract/abstract}
+
+% ****************** TOC, List of Figures and List of tables *******************
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+% ******************************* Main Matter **********************************
+
+\mainmatter
+
+\include{Chapter1/chapter1}
+
+% ******************************* Back Matter **********************************
+
+\backmatter
+
+% ******************************* Bibliography *********************************
+
+\cleardoublepage
+
+\bibliographystyle{plain}
+% \refstepcounter{chapter}
+% \addcontentsline{toc}{chapter}{\bibname}
+\bibliography{Bibliography/bibliography}
+
+\end{document}
